@@ -1,0 +1,1 @@
+self.__RSC_SERVER_MANIFEST="{\"node\":{\"72e194b10263b4e969a3d7208c7a462a0e3182c7\":{\"workers\":{\"app/page\":51},\"layer\":{\"app/page\":\"action-browser\"}}},\"edge\":{},\"encryptionKey\":\"PhZEAmwSaHuRT9CYiUUIqGY+b24MGI5Wo3ndsdvqKpc=\"}"
