@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blunt AI Tarot</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['"Crimson Text"', 'serif'],
+          },
+          colors: {
+            mystic: {
+              900: "#1a0b2e", // Deep purple background
+              800: "#2d1b4e", // Card background
+              700: "#432c7a", // Accent
+              600: "#764ba2", // Highlight
+              100: "#e0d4fc", // Text
+            },
+            gold: {
+              500: "#ffd700",
+              600: "#d4af37",
+            }
+          },
+          backgroundImage: {
+            "mystic-gradient": "linear-gradient(to bottom, #0f0c29, #302b63, #24243e)",
+          },
+        },
+      },
+    }
+  </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "next/": "https://esm.sh/next@^16.0.10/",
+    "next": "https://esm.sh/next@^16.0.10",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "tailwindcss": "https://esm.sh/tailwindcss@^4.1.18",
+    "@google/generative-ai": "https://esm.sh/@google/generative-ai@^0.24.1"
+  }
+}
+</script>
+</head>
+<body class="bg-mystic-900 text-mystic-100">
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
+</body>
+</html>
